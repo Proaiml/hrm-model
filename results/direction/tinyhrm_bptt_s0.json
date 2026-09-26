@@ -1,0 +1,96 @@
+{
+  "task": "direction",
+  "method": "tinyhrm_bptt",
+  "seed": 0,
+  "params": 531589,
+  "config": {
+    "steps": 1500,
+    "batch": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.1,
+    "warmup": 200,
+    "segments": 1,
+    "eval_segments": 1,
+    "act": false,
+    "augment": false,
+    "seed": 0,
+    "gpu_temp_limit": 75,
+    "device": "cuda",
+    "extra": {}
+  },
+  "train": {
+    "history": [
+      {
+        "step": 150,
+        "loss": 0.1194,
+        "train_exact": 0.984,
+        "seconds": 2.8
+      },
+      {
+        "step": 300,
+        "loss": 0.0013,
+        "train_exact": 1.0,
+        "seconds": 7.9
+      },
+      {
+        "step": 450,
+        "loss": 0.0055,
+        "train_exact": 1.0,
+        "seconds": 14.4
+      },
+      {
+        "step": 600,
+        "loss": 0.0001,
+        "train_exact": 1.0,
+        "seconds": 23.6
+      },
+      {
+        "step": 750,
+        "loss": 0.0001,
+        "train_exact": 1.0,
+        "seconds": 33.9
+      },
+      {
+        "step": 900,
+        "loss": 0.0,
+        "train_exact": 1.0,
+        "seconds": 44.5
+      },
+      {
+        "step": 1050,
+        "loss": 0.0,
+        "train_exact": 1.0,
+        "seconds": 54.8
+      },
+      {
+        "step": 1200,
+        "loss": 0.0,
+        "train_exact": 1.0,
+        "seconds": 62.0
+      },
+      {
+        "step": 1350,
+        "loss": 0.0,
+        "train_exact": 1.0,
+        "seconds": 64.9
+      },
+      {
+        "step": 1500,
+        "loss": 0.0,
+        "train_exact": 1.0,
+        "seconds": 67.8
+      }
+    ],
+    "train_seconds": 67.8,
+    "peak_mem_mb": 504.9,
+    "cooling_wait_seconds": 0.0
+  },
+  "test": {
+    "exact_by_segment": [
+      1.0
+    ],
+    "exact": 1.0,
+    "token_acc": 1.0
+  },
+  "n_test": 976
+}

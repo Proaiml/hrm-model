@@ -16,3 +16,8 @@ ENV/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Deney çıktıları
+checkpoints/
+logs/
+results/data_*.npz
